@@ -1,0 +1,6 @@
+{
+  "name": "HazVox AI",
+  "description": "Real-time, voice-activated industrial safety reporting dashboard powered by AssemblyAI and Supabase.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
