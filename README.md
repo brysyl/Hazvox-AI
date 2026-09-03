@@ -6,7 +6,7 @@
 [![Tech Stack: Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Database: Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-47C28B?style=for-the-badge&logo=supabase)](https://supabase.com/)
 
-> **Live Demo:** [Deploy URL Here] | **Pitch Video:** [YouTube Link Here]
+> **Live Demo:** https://hazvox-ai.netlify.app/ | **Pitch Video:** https://youtu.be/DemzLrvXt94?si=-CjNTPKy-vcWOHQR
 
 ## ⚠️ The Problem: Hands are Tied, Fines are High
 In construction, mining, and heavy manufacturing, workers wear heavy PPE (gloves, safety harnesses) and operate in high-noise environments. They cannot type on tablets to log near-misses or hazardous conditions. Manual reporting is delayed or skipped, leading to non-compliance fines ($3B+ annually in the US) and elevated workers' compensation premiums.
