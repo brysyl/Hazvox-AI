@@ -56,6 +56,20 @@ Moving away from oversaturated consumer bots (like interview coaches or customer
 - Interactive workflow controls for incident acknowledgment and assignment.
 - Automated escalation loops for critical tickets breaching SLAs.
 ---
+
+## Development & Deployment Challenges
+
+### Netlify & CI/CD Limitations
+- **Free Tier Constraints:** Strict build minutes, function timeout limits, and bandwidth caps on Netlify's free tier restrict heavy asset bundling and automated testing pipelines.
+- **CI/CD Synchronization:** Managing environment secrets and automated deployment triggers across distributed build environments led to occasional pipeline desynchronization.
+
+### Supabase & Gateway Restrictions
+- **Kong API Gateway Interception:** Direct database-to-Edge Function calls via `pg_net` consistently failed with `401 INVALID_API_KEY` errors due to Supabase's strict external API gateway routing and token policies.
+- **In-Database AI & Notification Execution Limits:** Attempting to execute Google Gemini analysis and Slack webhook dispatches natively from database triggers proved unviable due to runtime execution limits and header rejections.
+- **Architectural Pivot:** Bypassed gateway roadblocks by decoupling real-time workflows and shifting asynchronous AI enrichment and Slack dispatching to an external orchestration layer (n8n).
+
+---
+
 ## 🚀 Quick Start (Local Setup)
 
 To run HazVox AI locally for judging or development:
