@@ -44,6 +44,18 @@ Moving away from oversaturated consumer bots (like interview coaches or customer
 
 ---
 
+## Future Features
+
+### Gemini AI Triage
+- Automated severity classification from raw audio transcripts and telemetry.
+- AI-driven root-cause diagnostic hypotheses based on asset history.
+- Unstructured voice note parsing into structured compliance records.
+
+### Slack Dispatch
+- Rich Block Kit notifications with dynamic hazard badges and location data.
+- Interactive workflow controls for incident acknowledgment and assignment.
+- Automated escalation loops for critical tickets breaching SLAs.
+---
 ## 🚀 Quick Start (Local Setup)
 
 To run HazVox AI locally for judging or development:
