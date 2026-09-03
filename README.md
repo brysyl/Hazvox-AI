@@ -73,7 +73,7 @@ flowchart TD
 
 ### Netlify & CI/CD Limitations
 - **Free Tier Constraints:** Strict build minutes, function timeout limits, and bandwidth caps on Netlify's free tier restrict heavy asset bundling and automated testing pipelines.
-- **CI/CD Synchronization:** Managing environment secrets and automated deployment triggers across distributed build environments led to occasional pipeline desynchronization.
+
 
 ### Supabase & Gateway Restrictions
 - **Kong API Gateway Interception:** Direct database-to-Edge Function calls via `pg_net` consistently failed with `401 INVALID_API_KEY` errors due to Supabase's strict external API gateway routing and token policies.
