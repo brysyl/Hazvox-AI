@@ -44,6 +44,18 @@ Moving away from oversaturated consumer bots (like interview coaches or customer
 
 ---
 
+```mermaid
+flowchart TD
+    A[1. Audio Ingestion <br/> WebRTC Browser Mic] -->|Voice Stream| B[2. Intelligence Layer <br/> AssemblyAI Voice Agent]
+    B -->|VAD & Intent Routing| C[3. Execution <br/> JSON Tool Call]
+    C -->|Secure Payload| D[4. Data Layer <br/> Next.js API & Supabase]
+    D -->|Realtime Subscriptions| E[5. Real-Time UI <br/> Industrial Dark-Mode Dashboard]
+```
+---
+
+
+---
+
 ## Future Features
 
 ### Gemini AI Triage
